@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_device" model="ir.ui.view">
+        <field name="name">device Form</field>
+        <field name="model">device.device</field>
+        <field name="arch" type="xml">
+            <form string="Device">
+                <group>
+                    <field name="name" />
+                    <field name="server_id" widget="many2one_tags"/>
+                    <field name="device_id"  />
+                    <field name="date_registed" />
+                    <field name="active" />
+                    <field name="platform" />
+                    <field name="device_key1" />
+                    <field name="device_key2" />
+                    <field name="device_key3" />
+                    <field name="device_key4" />
+                    <field name="device_key5" />
+                    <field name="restkeycount" />
+
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_tree_device" model="ir.ui.view">
+        <field name="name">Device List</field>
+        <field name="model">device.device</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="server_id" widget="many2one_tags"/>
+                <field name="device_id"  />
+                <field name="date_registed" />
+                <field name="active" />
+                <field name="platform" />
+                <field name="device_key1" />
+                <field name="device_key2" />
+                <field name="device_key3" />
+                <field name="device_key4" />
+                <field name="device_key5" />
+                <field name="restkeycount" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_search_device" model="ir.ui.view">
+        <field name="name">Device Filters</field>
+        <field name="model">device.device</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="device_id" />
+                <filter name="filter_active"
+                    string="Active"
+                    domain="[('active','=',True)]" />
+               <filter name="filter_inactive"
+                    string="Inactive"
+                    domain="[('active','=',False)]" />
+            </search>
+        </field>
+    </record>
+</odoo>

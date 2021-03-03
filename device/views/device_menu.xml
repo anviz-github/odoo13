@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Library App Menu -->
+    <menuitem id="menu_device" name="Device" />
+    <!-- Action to open the Book list -->
+    <act_window id="action_device_server"
+        name="Device Server"
+        res_model="device.server"
+        view_mode="tree,form"
+    />
+    <!-- Menu item to open the Book list -->
+    <menuitem id="menu_device_server"
+        name="Server"
+        parent="menu_device"
+        action="action_device_server"
+    />
+
+    <act_window id="action_device_device"
+        name="Device Device"
+        res_model="device.device"
+        view_mode="tree,form"
+    />
+    <menuitem id="menu_device_device"
+        name="Device"
+        parent="menu_device"
+        action="action_device_device"
+    />
+
+</odoo>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c4b7bf1-da95-4d21-82e0-62164229154b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../payment_elavon_scs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../payment_elavon_scs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quality_alert_state/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../quality_alert_state/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1efSMuB9P96d4qjavkv5WHodBQb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c4b7bf1-da95-4d21-82e0-62164229154b" name="Default Changelist" comment="" />
+      <created>1594711109480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594711109480</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="408" y="181" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1597390180571">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="408" y="181" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.830@0.23.1440.830" timestamp="1597390180571" />
+  </component>
+</project>
