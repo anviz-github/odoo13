@@ -154,6 +154,8 @@ class HrInsurance(models.Model):
     _inherit = 'hr.contract'
     other_wage = fields.Integer(string="Other Wage")
     trial_wage = fields.Integer(string='Trial Wage')
+    attendance_award = fields.Integer(string='Attendance Award')
+    service_allowance = fields.Integer(string='Service Allowance')
 
     # def get_deduced_amount(self):
     #     current_date = datetime.now()
