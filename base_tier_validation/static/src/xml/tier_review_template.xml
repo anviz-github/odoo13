@@ -26,8 +26,8 @@
                     <th class="text-center">Sequence</th>
                     <th class="text-left">Requested by</th>
                     <th class="text-right">Description</th>
-                    <th class="text-right">Reviewer</th>
                     <th class="text-right">Status</th>
+                    <th class="text-right">Todo by</th>
                     <th class="text-right">Done by</th>
                     <th class="text-right">Validation Date</th>
                     <th class="text-right">Comment</th>
@@ -61,10 +61,10 @@
                             <span t-esc="review.name" />
                         </td>
                         <td class="text-right">
-                            <span t-esc="review.reviewer_id" />
+                            <span t-esc="review.display_status" />
                         </td>
                         <td class="text-right">
-                            <span t-esc="review.display_status" />
+                            <span t-esc="review.todo_by" />
                         </td>
                         <td class="text-right">
                             <span t-esc="review.done_by[1]" />

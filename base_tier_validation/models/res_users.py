@@ -13,19 +13,22 @@ class Users(models.Model):
     def review_user_count(self):
         user_reviews = {}
         to_review_docs = {}
-        for review in self.env.user.review_ids.filtered(
-            lambda r: r.status == "pending"
-        ):
+        reviews = self.env["tier.review"].search(
+            [
+                ("status", "=", "pending"),
+                ("can_review", "=", True),
+                ("id", "in", self.env.user.review_ids.ids),
+            ]
+        )
+        for review in reviews:
             record = (
                 review.env[review.model]
                 .with_user(self.env.user)
                 .search([("id", "=", review.res_id)])
             )
-            if not record:
+            if not record or record.rejected or not record.can_review:
                 # Checking that the review is accessible with the permissions
-                continue
-            can_review = record.can_review
-            if not can_review:
+                # and to review condition is valid
                 continue
             if not user_reviews.get(review["model"]):
                 user_reviews[review.model] = {
@@ -51,4 +54,9 @@ class Users(models.Model):
             r["display_status"] = dict(
                 review_obj.fields_get("status")["status"]["selection"]
             ).get(r.get("status"))
+            # Convert to datetime timezone
+            if r["reviewed_date"]:
+                r["reviewed_date"] = fields.Datetime.context_timestamp(
+                    self, r["reviewed_date"]
+                )
         return res
