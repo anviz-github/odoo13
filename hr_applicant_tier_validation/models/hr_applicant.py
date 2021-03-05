@@ -17,13 +17,8 @@ class Applicant(models.Model):
 
     @api.onchange('stage_id')
     def onchange_stage_id(self):
-        #vals = self._onchange_stage_id_internal(self.stage_id.id)
-        print('stage_id-------', self.stage_id)
-        print('vals ###', self.stage_id.id)
-        print('state ####', self.state)
         if self.stage_id.id == 4:
-            print("if state &&&&&:", self.state)
             self.state = 'proposal'
         else:
             self.state = 'processing'
-            print('processing ......')
+           
