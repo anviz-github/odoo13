@@ -85,6 +85,7 @@ class HrInsurance(models.Model):
     insurance_fertility_company = fields.Float(string="fertility company", compute="get_insure_subtotal")
     insurance_injury_company = fields.Float(string="injury company", compute="get_insure_subtotal")
     length_of_service = fields.Integer(string="Length of service", default=False, compute='compute_service_years')
+    identification_address = fields.Char(string="Identification Address")
 
     @api.onchange('self.joining_date')
     def compute_service_years(self):
