@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import  time
-from datetime import datetime, date
+from datetime import datetime, timedelta
 from dateutil import relativedelta
 from odoo import models, fields, api, exceptions
-from odoo import tools, _
+#from odoo import tools, _
 
 
 class TaxDeduction(models.Model):
@@ -29,8 +29,13 @@ class TaxDeduction(models.Model):
     company_id = fields.Many2one('res.company', string='Company', required=True, help="Company",
                                  default=lambda self: self.env.company_id)
     def get_status(self):
-        current_datetime = datetime.now()
-        current_date = datetime.strftime(current_datetime, "%Y-%m-%d ")
+        #current_datetime = datetime.now()
+        #current_date = datetime.strftime(current_datetime, "%Y-%m-%d ")
+
+        today = datetime.today()
+        first = today.replace(day=1)
+        lastMonth = first - timedelta(days=1)
+        current_date = datetime.strftime(lastMonth, "%Y-%m-%d ")
         for i in self:
             x = str(i.date_from)
             y = str(i.date_to)
@@ -46,14 +51,20 @@ class HrInsurance(models.Model):
                                 domain=[('state', '=', 'active')])
 
     def get_tax_deduction_total(self):
-        current_date = datetime.now()
-        current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        #current_date = datetime.now()
+        #current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+
+        today = datetime.today()
+        first = today.replace(day=1)
+        lastMonth = first - timedelta(days=1)
+        current_date = datetime.strftime(lastMonth, "%Y-%m-%d ")
+
         for emp in self:
             ins_amount = 0
             for ins in emp.deduction:
                 x = str(ins.date_from)
                 y = str(ins.date_to)
-                if x < current_datetime:
-                    if y > current_datetime:
+                if x < current_date:
+                    if y > current_date:
                         ins_amount = ins_amount + ins.deduction_amount
         emp.deduction_total = ins_amount
