@@ -61,8 +61,8 @@ class HrInsurance(models.Model):
         for emp in self:
             ins_amount = 0
             for ins in emp.deduction:
-                x = str(ins.date_from)
-                y = str(ins.date_to)
+                x = ins.date_from
+                y = ins.date_to
                 if x < current_date:
                     if y >= current_date:
                         ins_amount = ins_amount + ins.deduction_amount
