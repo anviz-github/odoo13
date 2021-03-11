@@ -2,7 +2,7 @@
 import  time
 from datetime import datetime, timedelta
 from dateutil import relativedelta
-from odoo import models, fields, api, exceptions
+from odoo import models, fields, api, _
 #from odoo import tools, _
 
 

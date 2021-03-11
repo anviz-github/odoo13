@@ -15,6 +15,7 @@
  'depends': ['base', 'mail', 'hr_contract', 'hr_payroll'],
  'data': [
      'data/data.xml',
+     'security/hr_performance_bonus_security.xml',
      'security/ir.model.access.csv',
      'views/hr_tax_deduction_views.xml',
  ],
