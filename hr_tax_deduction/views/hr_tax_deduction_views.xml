@@ -66,6 +66,8 @@
                     <field name="deduction_amount"/>
                     <field name="date_from" />
 				    <field name="date_to"/>
+                    <field name="company_id"/>
+
 
                 </tree>
             </field>
