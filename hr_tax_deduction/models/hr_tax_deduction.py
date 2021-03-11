@@ -47,6 +47,8 @@ class HrInsurance(models.Model):
     deduction = fields.One2many('hr.tax.deduction', 'employee_id', string="Tax_Deduction", help="Tax Deduction",)
                                 #domain=[('state', '=', 'active')])
 
+
+    @api.onchange('deduction')
     def get_tax_deduction_total(self):
         # current_date = datetime.now()
         # current_date = datetime.strftime(current_date, "%Y-%m-%d ")
