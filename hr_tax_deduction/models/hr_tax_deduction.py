@@ -44,8 +44,8 @@ class TaxDeduction(models.Model):
 class HrInsurance(models.Model):
     _inherit = 'hr.employee'
     deduction_total = fields.Float(string="Tax Deduction", default=0, compute="get_tax_deduction_total")
-    deduction = fields.One2many('hr.tax.deduction', 'employee_id', string="Tax_Deduction", help="Tax Deduction",
-                                domain=[('state', '=', 'active')])
+    deduction = fields.One2many('hr.tax.deduction', 'employee_id', string="Tax_Deduction", help="Tax Deduction",)
+                                #domain=[('state', '=', 'active')])
 
     def get_tax_deduction_total(self):
         # current_date = datetime.now()
