@@ -27,7 +27,7 @@ class TaxDeduction(models.Model):
                               ('expired', 'Expired'), ],
                              default='active', string="State", compute='get_status')
     company_id = fields.Many2one('res.company', string='Company', required=True, help="Company",
-                                 default=lambda self: self.env.company_id)
+                                 default=lambda self: self.env.company.id)
     def get_status(self):
         #current_datetime = datetime.now()
         #current_date = datetime.strftime(current_datetime, "%Y-%m-%d ")
