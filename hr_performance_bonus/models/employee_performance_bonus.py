@@ -62,20 +62,23 @@ class HrBouns(models.Model):
     _inherit = 'hr.employee'
 
     bonus_amount= fields.Float(string="Performance Bonus", default=0, compute="get_bonus")
-    bonus = fields.One2many('hr.bonus', 'employee_id', string="Bonus", help="Bonus",
-                                domain=[('state', '=', 'active')])
+    bonus = fields.One2many('hr.bonus', 'employee_id', string="Bonus", help="Bonus",)
+                                #domain=[('state', '=', 'active')])
 
+    @api.onchange('bonus')
     def get_bonus(self):
-        current_date = datetime.now()
-        current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        #current_date = datetime.now()
+        #current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        lastMonth = (datetime.today().replace(day=1) - timedelta(days=1)).date()
+
         for emp in self:
 
             bonus_sum= 0
             for ins in emp.bonus:
-                x = str(ins.date_from)
-                y = str(ins.date_to)
-                if x < current_datetime:
-                    if y > current_datetime:
+                x = ins.date_from
+                y = ins.date_to
+                if x < lastMonth:
+                    if y >= lastMonth:
                         bonus_sum = ins.bonus
 
         emp.bonus_amount = bonus_sum

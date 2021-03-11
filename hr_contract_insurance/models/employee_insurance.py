@@ -70,8 +70,8 @@ class HrInsurance(models.Model):
 
 
     insurance_percentage = fields.Float(string="Company Percentage ", help="Company insurance percentage")
-    insurance = fields.One2many('hr.insurance', 'employee_id', string="Insurance", help="Insurance",
-                                domain=[('state', '=', 'active')])
+    insurance = fields.One2many('hr.insurance', 'employee_id', string="Insurance", help="Insurance",)
+                                #domain=[('state', '=', 'active')])
     insurance_pesion_personal = fields.Float(string="pesion personal", compute="get_insure_subtotal")
     insurance_medical_personal = fields.Float(string="medical personal", compute="get_insure_subtotal")
     insurance_unemployment_personal = fields.Float(string="unemployment personal", compute="get_insure_subtotal")
@@ -95,10 +95,12 @@ class HrInsurance(models.Model):
                 join = rec.joining_date
                 current_date = datetime.now()
                 self.length_of_service = relativedelta.relativedelta(current_date, join).years
-
+@   @api.onchange('insurance')
     def get_insure_subtotal(self):
-        current_date = datetime.now()
-        current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        #current_date = datetime.now()
+        #current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        lastMonth = (datetime.today().replace(day=1) - timedelta(days=1)).date()
+
         for emp in self:
             ins_amount_pesion_personal = 0
             ins_amount_pesion_company = 0
@@ -113,10 +115,10 @@ class HrInsurance(models.Model):
             ins_amount_injury_personal = 0
             ins_amount_injury_company = 0
             for ins in emp.insurance:
-                x = str(ins.date_from)
-                y = str(ins.date_to)
-                if x < current_datetime:
-                    if y > current_datetime:
+                x = ins.date_from
+                y = ins.date_to
+                if x < lastMonth:
+                    if y >= lastMonth:
                         if ins.name == "养老":
                             ins_amount_pesion_personal = ins_amount_pesion_personal + ins.sum_personal_insured
                             ins_amount_pesion_company = ins_amount_pesion_company + ins.sum_company_insured
