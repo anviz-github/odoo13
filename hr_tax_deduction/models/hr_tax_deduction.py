@@ -48,8 +48,8 @@ class HrInsurance(models.Model):
                                 domain=[('state', '=', 'active')])
 
     def get_tax_deduction_total(self):
-        #current_date = datetime.now()
-        #current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        # current_date = datetime.now()
+        # current_date = datetime.strftime(current_date, "%Y-%m-%d ")
 
         today = datetime.today()
         first = today.replace(day=1)
@@ -62,6 +62,6 @@ class HrInsurance(models.Model):
                 x = str(ins.date_from)
                 y = str(ins.date_to)
                 if x < current_date:
-                    if y == current_date:
+                    if y >= current_date:
                         ins_amount = ins_amount + ins.deduction_amount
         emp.deduction_total = ins_amount

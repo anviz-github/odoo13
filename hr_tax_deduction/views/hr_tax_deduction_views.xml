@@ -49,6 +49,7 @@
 				<field name="date_to" class="oe_inline" on_change="1" modifiers="{'readonly': [['state', 'not in', ['draft']]], 'required': true}"/>
 			</div>
                                 <field name="deduction_amount"/>
+                                <field name="company_id"/>
                             </group>
                         </group>
 
