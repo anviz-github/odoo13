@@ -63,7 +63,7 @@ class HrInsurance(models.Model):
             for ins in emp.deduction:
                 x = ins.date_from
                 y = ins.date_to
-                if x < lastMonth:
-                    if y >= current_date:
+                if x < llastMonth.date():
+                    if y >= lastMonth.date():
                         ins_amount = ins_amount + ins.deduction_amount
         emp.deduction_total = ins_amount
