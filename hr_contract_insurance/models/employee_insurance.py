@@ -22,8 +22,8 @@ class EmployeeInsurance(models.Model):
     sum_personal_insured = fields.Float(string="Sum Personal Insured", required=True, help="Insured sum")
     sum_company_insured = fields.Float(string="Sum Company Insured", required=True, help="Insured sum")
     cardinal_number = fields.Float(string='Cardinal Number', required=True, help="the cardinal number")
-    company_ratio = fields.Float(string='Company Ratio', required=True, help='the company ratio', digit=(4, 3))
-    personal_ratio = fields.Float(string='Personal Ratio', required=True, help='the personal ratio', digit=(4, 3))
+    company_ratio = fields.Float(string='Company Ratio', required=True, help='the company ratio', digits=(4, 3))
+    personal_ratio = fields.Float(string='Personal Ratio', required=True, help='the personal ratio', digits=(4, 3))
 
     policy_coverage = fields.Selection([('monthly', 'Monthly'), ('yearly', 'Yearly')],
                                        required=True, default='monthly',

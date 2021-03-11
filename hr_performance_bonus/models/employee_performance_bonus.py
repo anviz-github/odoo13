@@ -15,7 +15,7 @@ class EmployeePerformanceBonus(models.Model):
     #policy_id = fields.Many2one('insurance.policy', string='Policy', required=True, help="Policy")
     #name = fields.Char(string='Insurance Name', required=True, help='the insurance name')
     base = fields.Float(string='Month Base', required=True, help="bonus base")
-    ratio = fields.Float(string="Month Ratio", required=True, help="bonus ratio")
+    ratio = fields.Float(string="Month Ratio", required=True, help="bonus ratio", default=1)
     bonus = fields.Float(string="Month Bonus", required=True, help="month bonus")
     policy_coverage = fields.Selection([('monthly', 'Monthly'), ('seasonly', 'Seasonly')],
                                        required=True, default='monthly',
