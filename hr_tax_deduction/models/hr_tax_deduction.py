@@ -53,9 +53,8 @@ class HrInsurance(models.Model):
         # current_date = datetime.now()
         # current_date = datetime.strftime(current_date, "%Y-%m-%d ")
 
-        today = datetime.today()
-        first = today.replace(day=1)
-        lastMonth = first - timedelta(days=1)
+
+        lastMonth = (datetime.today().replace(day=1) - timedelta(days=1)).date()
         #current_date = datetime.strftime(lastMonth, "%Y-%m-%d ")
 
         for emp in self:
@@ -63,7 +62,7 @@ class HrInsurance(models.Model):
             for ins in emp.deduction:
                 x = ins.date_from
                 y = ins.date_to
-                if x < lastMonth.date():
-                    if y >= lastMonth.date():
+                if x < lastMonth:
+                    if y >= lastMonth:
                         ins_amount = ins_amount + ins.deduction_amount
         emp.deduction_total = ins_amount
