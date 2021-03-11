@@ -95,7 +95,7 @@ class HrInsurance(models.Model):
                 join = rec.joining_date
                 current_date = datetime.now()
                 self.length_of_service = relativedelta.relativedelta(current_date, join).years
-@   @api.onchange('insurance')
+    @api.onchange('insurance')
     def get_insure_subtotal(self):
         #current_date = datetime.now()
         #current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
