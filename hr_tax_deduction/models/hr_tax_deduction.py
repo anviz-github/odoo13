@@ -29,13 +29,10 @@ class TaxDeduction(models.Model):
     company_id = fields.Many2one('res.company', string='Company', required=True, help="Company",
                                  default=lambda self: self.env.company.id)
     def get_status(self):
-        #current_datetime = datetime.now()
-        #current_date = datetime.strftime(current_datetime, "%Y-%m-%d ")
+        current_datetime = datetime.now()
+        current_date = datetime.strftime(current_datetime, "%Y-%m-%d ")
 
-        today = datetime.today()
-        first = today.replace(day=1)
-        lastMonth = first - timedelta(days=1)
-        current_date = datetime.strftime(lastMonth, "%Y-%m-%d ")
+
         for i in self:
             x = str(i.date_from)
             y = str(i.date_to)
