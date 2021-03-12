@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hr_contract_insurance.iml" filepath="$PROJECT_DIR$/.idea/hr_contract_insurance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/quality_occurance.iml" filepath="$PROJECT_DIR$/.idea/quality_occurance.iml" />
     </modules>
   </component>
 </project>
