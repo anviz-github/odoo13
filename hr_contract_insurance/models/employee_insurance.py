@@ -56,7 +56,7 @@ class EmployeeInsurance(models.Model):
                 else:
                     i.state = 'expired'
 
-    @api.constrains('policy_coverage')
+    
     @api.onchange('policy_coverage')
     def get_policy_period(self):
         if self.policy_coverage == 'monthly':
