@@ -49,13 +49,13 @@ class EmployeePerformanceBonus(models.Model):
                 else:
                     i.state = 'expired'
 
-    @api.constrains('policy_coverage')
-    @api.onchange('policy_coverage')
-    def get_policy_period(self):
-        if self.policy_coverage == 'monthly':
-            self.date_to = str(datetime.now() + relativedelta.relativedelta(months=+1, day=1, days=-1))[:10]
-        # if self.policy_coverage == 'seasonly':
-        #     self.date_to = str(datetime.now() + relativedelta.relativedelta(months=+3))[:10]
+    # @api.constrains('policy_coverage')
+    # @api.onchange('policy_coverage')
+    # def get_policy_period(self):
+    #     if self.policy_coverage == 'monthly':
+    #         self.date_to = str(datetime.now() + relativedelta.relativedelta(months=+1, day=1, days=-1))[:10]
+    #     # if self.policy_coverage == 'seasonly':
+    #     #     self.date_to = str(datetime.now() + relativedelta.relativedelta(months=+3))[:10]
 
 
 class HrBouns(models.Model):
