@@ -5,10 +5,149 @@
             <attribute name="id">cur_header</attribute>
         </xpath>
     </template>
-
+    <template id="custom_main" inherit_id="website.layout" name="Custom Main">
+        <xpath expr="//div[@id='wrapwrap']/header" position="after">
+            <div class="main">
+                <div class="container">
+                    <div class="alert alert-info mt16" role="alert">
+                        <strong>Welcome</strong> in our website!
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
     <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
         <xpath expr="//div[@id='wrapwrap']/footer" position="attributes">
             <attribute name="id">cur_footer</attribute>
+        </xpath>
+
+        <xpath expr="//div[@id='wrapwrap']/footer" position="before">
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-start">
+                        <ul class="foorter-sitelink">
+                            <li class="item-link">
+                                <a href="/anviz.html" class="link-title">
+                                    ABOUT                    </a>
+                                <ul>
+                                    <li>
+                                        <a href="/careers.html" class="link-sub-title">
+                                            Careers                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/contact-us.html" class="link-sub-title">
+                                            Contact Us                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/pressok.html" class="link-sub-title">
+                                            Press                            </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-link">
+                                <a href="/partners.html" class="link-title">
+                                    PARTNER                    </a>
+                                <ul>
+                                    <li>
+                                        <a href="/casestudy.html" class="link-sub-title">
+                                            Case Studies                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/company/wheretobuy.html" class="link-sub-title">
+                                            Find A Reseller                            </a></li>
+                                    <li>
+                                        <a href="/partners.html" class="link-sub-title">
+                                            Become A Partner                            </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-link">
+                                <a href="/news.html" class="link-title">
+                                    NEWS                    </a>
+                                <ul>
+                                    <li>
+                                        <a href="/news/index.html?tag=News+Release" class="link-sub-title">
+                                            News Release                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/activity/index.html?tag=" class="link-sub-title">
+                                            Events                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/news/index.html?tag=Product+Updates" class="link-sub-title">
+                                            Product Updates                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/news/index.html?tag=Firmware+Updates" class="link-sub-title">
+                                            Firmware Updates                            </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-link">
+                                <a href="/faq/index.html" class="link-title">
+                                    SUPPORT                    </a>
+                                <ul>
+                                    <li>
+                                        <a href="/download.html" class="link-sub-title">
+                                            Download                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/faq/index.html" class="link-sub-title">
+                                            FAQ                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/warranty.html" class="link-sub-title">
+                                            Warranty &amp; RMA                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="/marketing.html" class="link-sub-title">
+                                            Marketing Support                            </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="footer-siteshare">
+                            <li class="item-link">
+                                <a href="/keep-up-date.html" class="link-title">
+                                    KEEP UP TO DATE                    </a>
+                                <ul>
+                                    <li class="media-hot">
+                                        <a href="https://twitter.com/anvizglobal" class="media-icon twitter" target="_blank">
+                                            <span class="icon icon-twitter"></span>
+                                        </a>
+                                        <a href="https://www.facebook.com/AnvizGlobalinc" class="media-icon facebook" target="_blank">
+                                            <span class="icon icon-facebook"></span>
+                                        </a>
+                                        <a href="https://www.youtube.com/user/AnvizGlobalinc" class="media-icon youtobe" target="_blank">
+                                            <span class="icon icon-youtobe"></span>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/shanghai-anviz-biometric-tech--co--ltd-?trk=tyah&amp;trkInfo=tas%3Aanviz%2Cidx%3A2-2-3" class="media-icon linkedin" target="_blank">
+                                            <span class="icon icon-linkedin"></span>
+                                        </a>
+                                        <a href="https://www.instagram.com/anvizglobal/?igshid=1i42l3mcte7gz" class="media-icon instagram" target="_blank">
+                                            <span class="icon icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mail-warp">
+                                    <h3 class="link-title">
+                                        STAY IN TOUCH                        </h3>
+                                    <form id="subscribeFormId" action="/form/save.html" method="post" class="form-inline">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subscribe_email" placeholder="email" />
+                                            <input type="hidden" name="module" value="subscribe" />
+                                        </div>
+                                        <button type="submit" class="anviz-btn anviz-default-btn color-ff" id="subscribe_btn">
+                                            SUBSCRIBE                            </button>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- === Snippets' area === -->
+            <div class="oe_structure" />
         </xpath>
     </template>
 </odoo>

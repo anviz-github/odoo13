@@ -1,0 +1,1302 @@
+@font-face {
+    font-family: 'anviz';
+    src: url('../fonts/anviz/anviz.eot?a8cqve');
+    src: url('../fonts/anviz/anviz.eot?a8cqve#iefix') format('embedded-opentype'), url('../fonts/anviz.ttf') format('truetype'), url('../fonts/anviz.woff') format('woff'), url('../fonts/anviz/anviz.svg?a8cqve#anviz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'anviz' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*2019 icon*/
+
+.icon-cpu-entity:before {
+    font-family: 'anviz';
+    content: "\e9ae";
+}
+
+.icon-poe-wifi:before {
+    font-family: 'anviz';
+    content: "\e9c2";
+}
+
+.icon-eye:before {
+    font-family: 'anviz';
+    content: "\e9ad";
+}
+
+.icon-acp-lan:before {
+    font-family: 'anviz';
+    content: "\e92b";
+}
+
+.icon-anvizcloud:before {
+    font-family: 'anviz';
+    content: "\e92c";
+}
+
+.icon-b-devices:before {
+    font-family: 'anviz';
+    content: "\e92e";
+}
+
+.icon-broadcast:before {
+    font-family: 'anviz';
+    content: "\e930";
+}
+
+.icon-cctv:before {
+    font-family: 'anviz';
+    content: "\e932";
+}
+
+.icon-c-communication:before {
+    font-family: 'anviz';
+    content: "\e934";
+}
+
+.icon-environment:before {
+    font-family: 'anviz';
+    content: "\e93e";
+}
+
+.icon-facility:before {
+    font-family: 'anviz';
+    content: "\e940";
+}
+
+.icon-info-sharing:before {
+    font-family: 'anviz';
+    content: "\e942";
+}
+
+.icon-innovative:before {
+    font-family: 'anviz';
+    content: "\e944";
+}
+
+.icon-interaction:before {
+    font-family: 'anviz';
+    content: "\e946";
+}
+
+.icon-latest-news:before {
+    font-family: 'anviz';
+    content: "\e948";
+}
+
+.icon-process:before {
+    font-family: 'anviz';
+    content: "\e949";
+}
+
+.icon-projects:before {
+    font-family: 'anviz';
+    content: "\e975";
+}
+
+.icon-property:before {
+    font-family: 'anviz';
+    content: "\e9a3";
+}
+
+.icon-RD-cost:before {
+    font-family: 'anviz';
+    content: "\e9a6";
+}
+
+.icon-raw-material:before {
+    font-family: 'anviz';
+    content: "\e9a7";
+}
+
+.icon-service-spots:before {
+    font-family: 'anviz';
+    content: "\e9a8";
+}
+
+.icon-smart-home:before {
+    font-family: 'anviz';
+    content: "\e9a9";
+}
+
+.icon-solution1:before {
+    font-family: 'anviz';
+    content: "\e9aa";
+}
+
+.icon-staff:before {
+    font-family: 'anviz';
+    content: "\e9ab";
+}
+
+.icon-wifi-equipment:before {
+    font-family: 'anviz';
+    content: "\e9ac";
+}
+
+.icon-all:before {
+    font-family: 'anviz';
+    content: "\e928";
+}
+
+.icon-chat:before {
+    font-family: 'anviz';
+    content: "\e929";
+}
+
+.icon-tag-entity:before {
+    font-family: 'anviz';
+    content: "\e92a";
+}
+
+.icon-app-wifi:before {
+    font-family: 'anviz';
+    content: "\e923";
+}
+
+.icon-download-center:before {
+    font-family: 'anviz';
+    content: "\e924";
+}
+
+.icon-faq:before {
+    font-family: 'anviz';
+    content: "\e925";
+}
+
+.icon-online:before {
+    font-family: 'anviz';
+    content: "\e926";
+}
+
+.icon-open-door:before {
+    font-family: 'anviz';
+    content: "\e927";
+}
+
+.icon-cross-chex-cloud:before {
+    font-family: 'anviz';
+    content: "\e91e";
+}
+
+.icon-cross-chex-download:before {
+    font-family: 'anviz';
+    content: "\e91f";
+}
+
+.icon-cross-chex-pc:before {
+    font-family: 'anviz';
+    content: "\e920";
+}
+
+.icon-ie:before {
+    font-family: 'anviz';
+    content: "\e921";
+}
+
+.icon-windows:before {
+    font-family: 'anviz';
+    content: "\e922";
+}
+
+.icon-365logo:before {
+    font-family: 'anviz';
+    content: "\e91b";
+}
+
+.icon-diy:before {
+    font-family: 'anviz';
+    content: "\e91d";
+}
+
+.icon-marketing:before {
+    font-family: 'anviz';
+    content: "\e910";
+}
+
+.icon-support:before {
+    font-family: 'anviz';
+    content: "\e91a";
+}
+
+.icon-earth:before {
+    font-family: 'anviz';
+    content: "\e900";
+}
+
+.icon-email:before {
+    font-family: 'anviz';
+    content: "\e901";
+}
+
+.icon-info:before {
+    font-family: 'anviz';
+    content: "\e902";
+}
+
+.icon-logo:before {
+    font-family: 'anviz';
+    content: "\e903";
+}
+
+.icon-search:before {
+    font-family: 'anviz';
+    content: "\e904";
+}
+
+.icon-shopping:before {
+    font-family: 'anviz';
+    content: "\e905";
+}
+
+.icon-tel:before {
+    font-family: 'anviz';
+    content: "\e906";
+}
+
+.icon-user:before {
+    font-family: 'anviz';
+    content: "\e907";
+}
+
+.icon-back:before {
+    font-family: 'anviz';
+    content: "\ea53";
+}
+
+.icon-menu-level:before {
+    font-family: 'anviz';
+    content: "\ea4a";
+}
+
+.icon-menu-vertical:before {
+    font-family: 'anviz';
+    content: "\ea49";
+}
+
+.icon-down:before {
+    font-family: 'anviz';
+    content: "\ea51";
+}
+
+.icon-left:before {
+    font-family: 'anviz';
+    content: "\ea50";
+}
+
+.icon-right:before {
+    font-family: 'anviz';
+    content: "\ea52";
+}
+
+.icon-up:before {
+    font-family: 'anviz';
+    content: "\ea4f";
+}
+
+.icon-pause:before {
+    font-family: 'anviz';
+    content: "\ea4e";
+}
+
+.icon-play:before {
+    font-family: 'anviz';
+    content: "\ea4c";
+}
+
+.icon-stop:before {
+    font-family: 'anviz';
+    content: "\ea4b";
+}
+
+.icon-menu:before {
+    font-family: 'anviz';
+    content: "\ea48";
+}
+
+.icon-onvif:before {
+    font-family: 'anviz';
+    content: "\ea47";
+}
+
+.icon-customer:before {
+    font-family: 'anviz';
+    content: "\ea46";
+}
+
+.icon-client:before {
+    font-family: 'anviz';
+    content: "\ea4d";
+}
+
+.icon-file:before {
+    font-family: 'anviz';
+    content: "\ea45";
+}
+
+.icon-excel:before {
+    font-family: 'anviz';
+    content: "\ea3c";
+}
+
+.icon-word:before {
+    font-family: 'anviz';
+    content: "\ea3d";
+}
+
+.icon-ppt:before {
+    font-family: 'anviz';
+    content: "\ea3e";
+}
+
+.icon-pdf:before {
+    font-family: 'anviz';
+    content: "\ea3f";
+}
+
+.icon-zip:before {
+    font-family: 'anviz';
+    content: "\ea40";
+}
+
+.icon-jpg:before {
+    font-family: 'anviz';
+    content: "\ea41";
+}
+
+.icon-txt:before {
+    font-family: 'anviz';
+    content: "\ea42";
+}
+
+.icon-export:before {
+    font-family: 'anviz';
+    content: "\ea43";
+}
+
+.icon-zoom:before {
+    font-family: 'anviz';
+    content: "\ea44";
+}
+
+.icon-loading:before {
+    font-family: 'anviz';
+    content: "\ea3b";
+}
+
+.icon-delete-entity:before {
+    font-family: 'anviz';
+    content: "\e9db";
+}
+
+.icon-warn-entity:before {
+    font-family: 'anviz';
+    content: "\e9dc";
+}
+
+.icon-pointer:before {
+    font-family: 'anviz';
+    content: "\e908";
+}
+
+.icon-pointer-empty:before {
+    font-family: 'anviz';
+    content: "\e909";
+}
+
+.icon-password:before {
+    font-family: 'anviz';
+    content: "\e90f";
+}
+
+.icon-hot:before {
+    font-family: 'anviz';
+    content: "\e917";
+}
+
+.icon-download_line:before {
+    font-family: 'anviz';
+    content: "\e919";
+}
+
+.icon-map:before {
+    font-family: 'anviz';
+    content: "\e9b0";
+}
+
+.icon-bad:before {
+    font-family: 'anviz';
+    content: "\e9b1";
+}
+
+.icon-good:before {
+    font-family: 'anviz';
+    content: "\e9b2";
+}
+
+.icon-attachment:before {
+    font-family: 'anviz';
+    content: "\e9b3";
+}
+
+.icon-warning-triangle:before {
+    font-family: 'anviz';
+    content: "\e9b4";
+}
+
+.icon-smile:before {
+    font-family: 'anviz';
+    content: "\e9b5";
+}
+
+.icon-success:before {
+    font-family: 'anviz';
+    content: "\e9b6";
+}
+
+.icon-QRCode:before {
+    font-family: 'anviz';
+    content: "\e9b7";
+}
+
+.icon-help:before {
+    font-family: 'anviz';
+    content: "\e9b8";
+}
+
+.icon-information_line:before {
+    font-family: 'anviz';
+    content: "\e9b9";
+}
+
+.icon-right-arrow:before {
+    font-family: 'anviz';
+    content: "\e9ba";
+}
+
+.icon-pic:before {
+    font-family: 'anviz';
+    content: "\e9bb";
+}
+
+.icon-edit:before {
+    font-family: 'anviz';
+    content: "\e9bc";
+}
+
+.icon-cry:before {
+    font-family: 'anviz';
+    content: "\e9bd";
+}
+
+.icon-close:before {
+    font-family: 'anviz';
+    content: "\e9be";
+}
+
+.icon-cart:before {
+    font-family: 'anviz';
+    content: "\e9bf";
+}
+
+.icon-left-arrow:before {
+    font-family: 'anviz';
+    content: "\e9c0";
+}
+
+.icon-all1:before {
+    font-family: 'anviz';
+    content: "\e9c1";
+}
+
+.icon-full-screen:before {
+    font-family: 'anviz';
+    content: "\e90a";
+}
+
+.icon-out-full-screen:before {
+    font-family: 'anviz';
+    content: "\e90b";
+}
+
+.icon-antenna-thin:before {
+    font-family: 'anviz';
+    content: "\e9dd";
+}
+
+.icon-antenna:before {
+    font-family: 'anviz';
+    content: "\e9de";
+}
+
+.icon-camera-thin:before {
+    font-family: 'anviz';
+    content: "\e90c";
+}
+
+.icon-camera:before {
+    font-family: 'anviz';
+    content: "\e9df";
+}
+
+.icon-case-study-thin:before {
+    font-family: 'anviz';
+    content: "\e9e0";
+}
+
+.icon-case-study:before {
+    font-family: 'anviz';
+    content: "\e9e1";
+}
+
+.icon-catalogue-thin:before {
+    font-family: 'anviz';
+    content: "\e9e2";
+}
+
+.icon-catalogue:before {
+    font-family: 'anviz';
+    content: "\e9e3";
+}
+
+.icon-certificate-thin:before {
+    font-family: 'anviz';
+    content: "\e9e4";
+}
+
+.icon-certificate:before {
+    font-family: 'anviz';
+    content: "\e9e5";
+}
+
+.icon-controller-thin:before {
+    font-family: 'anviz';
+    content: "\e9e6";
+}
+
+.icon-controller:before {
+    font-family: 'anviz';
+    content: "\e9e7";
+}
+
+.icon-download-thin:before {
+    font-family: 'anviz';
+    content: "\e9e8";
+}
+
+.icon-download:before {
+    font-family: 'anviz';
+    content: "\e9e9";
+}
+
+.icon-face-entry-thin:before {
+    font-family: 'anviz';
+    content: "\e9ea";
+}
+
+.icon-face-entry:before {
+    font-family: 'anviz';
+    content: "\e9eb";
+}
+
+.icon-face-terminal-thin:before {
+    font-family: 'anviz';
+    content: "\e911";
+}
+
+.icon-face-terminal:before {
+    font-family: 'anviz';
+    content: "\e9ec";
+}
+
+.icon-faq-thin:before {
+    font-family: 'anviz';
+    content: "\e912";
+}
+
+.icon-faq1:before {
+    font-family: 'anviz';
+    content: "\e9ed";
+}
+
+.icon-fingerprint-thin:before {
+    font-family: 'anviz';
+    content: "\e914";
+}
+
+.icon-fingerprint:before {
+    font-family: 'anviz';
+    content: "\e9ee";
+}
+
+.icon-firmware-thin:before {
+    font-family: 'anviz';
+    content: "\e916";
+}
+
+.icon-firmware:before {
+    font-family: 'anviz';
+    content: "\e9ef";
+}
+
+.icon-hardware-thin:before {
+    font-family: 'anviz';
+    content: "\e918";
+}
+
+.icon-hardware:before {
+    font-family: 'anviz';
+    content: "\e9f0";
+}
+
+.icon-edk-thin:before {
+    font-family: 'anviz';
+    content: "\e9f1";
+}
+
+.icon-edk:before {
+    font-family: 'anviz';
+    content: "\e9f2";
+}
+
+.icon-iris-thin:before {
+    font-family: 'anviz';
+    content: "\e9f3";
+}
+
+.icon-iris:before {
+    font-family: 'anviz';
+    content: "\e9f4";
+}
+
+.icon-iris-usb-thin:before {
+    font-family: 'anviz';
+    content: "\e9f5";
+}
+
+.icon-iris-usb:before {
+    font-family: 'anviz';
+    content: "\e9f6";
+}
+
+.icon-manual-thin:before {
+    font-family: 'anviz';
+    content: "\e9f7";
+}
+
+.icon-manual:before {
+    font-family: 'anviz';
+    content: "\e9f8";
+}
+
+.icon-moudles-thin:before {
+    font-family: 'anviz';
+    content: "\e9f9";
+}
+
+.icon-moudles:before {
+    font-family: 'anviz';
+    content: "\e9fa";
+}
+
+.icon-online-thin:before {
+    font-family: 'anviz';
+    content: "\e9fb";
+}
+
+.icon-online1:before {
+    font-family: 'anviz';
+    content: "\e9fc";
+}
+
+.icon-reader-thin:before {
+    font-family: 'anviz';
+    content: "\e9fd";
+}
+
+.icon-reader:before {
+    font-family: 'anviz';
+    content: "\e9fe";
+}
+
+.icon-recoder-thin:before {
+    font-family: 'anviz';
+    content: "\e9ff";
+}
+
+.icon-recoder:before {
+    font-family: 'anviz';
+    content: "\ea00";
+}
+
+.icon-remote-thin:before {
+    font-family: 'anviz';
+    content: "\ea01";
+}
+
+.icon-remote:before {
+    font-family: 'anviz';
+    content: "\ea02";
+}
+
+.icon-sdk-thin:before {
+    font-family: 'anviz';
+    content: "\e936";
+}
+
+.icon-sdk:before {
+    font-family: 'anviz';
+    content: "\ea03";
+}
+
+.icon-smart-lock-thin:before {
+    font-family: 'anviz';
+    content: "\ea04";
+}
+
+.icon-smart-lock:before {
+    font-family: 'anviz';
+    content: "\ea05";
+}
+
+.icon-software-thin:before {
+    font-family: 'anviz';
+    content: "\ea06";
+}
+
+.icon-software:before {
+    font-family: 'anviz';
+    content: "\ea07";
+}
+
+.icon-tag-thin:before {
+    font-family: 'anviz';
+    content: "\ea08";
+}
+
+.icon-tag:before {
+    font-family: 'anviz';
+    content: "\ea09";
+}
+
+.icon-training-thin:before {
+    font-family: 'anviz';
+    content: "\ea0a";
+}
+
+.icon-training:before {
+    font-family: 'anviz';
+    content: "\ea0b";
+}
+
+.icon-trouble-ticket-thin:before {
+    font-family: 'anviz';
+    content: "\e938";
+}
+
+.icon-trouble-ticket:before {
+    font-family: 'anviz';
+    content: "\ea0c";
+}
+
+.icon-video-thin:before {
+    font-family: 'anviz';
+    content: "\e93a";
+}
+
+.icon-video:before {
+    font-family: 'anviz';
+    content: "\ea0d";
+}
+
+.icon-warranty-thin:before {
+    font-family: 'anviz';
+    content: "\e93c";
+}
+
+.icon-warranty:before {
+    font-family: 'anviz';
+    content: "\ea0e";
+}
+
+.icon-access-control-thin:before {
+    font-family: 'anviz';
+    content: "\e9af";
+}
+
+.icon-access-control:before {
+    font-family: 'anviz';
+    content: "\ea0f";
+}
+
+.icon-biometric-thin:before {
+    font-family: 'anviz';
+    content: "\ea10";
+}
+
+.icon-biometric:before {
+    font-family: 'anviz';
+    content: "\ea11";
+}
+
+.icon-facial-thin:before {
+    font-family: 'anviz';
+    content: "\ea12";
+}
+
+.icon-facial:before {
+    font-family: 'anviz';
+    content: "\ea13";
+}
+
+.icon-rfid-thin:before {
+    font-family: 'anviz';
+    content: "\ea14";
+}
+
+.icon-rfid:before {
+    font-family: 'anviz';
+    content: "\ea15";
+}
+
+.icon-surveillance-thin:before {
+    font-family: 'anviz';
+    content: "\ea16";
+}
+
+.icon-surveillance:before {
+    font-family: 'anviz';
+    content: "\ea17";
+}
+
+.icon-time-thin:before {
+    font-family: 'anviz';
+    content: "\ea18";
+}
+
+.icon-time:before {
+    font-family: 'anviz';
+    content: "\ea19";
+}
+
+.icon-news:before {
+    font-family: 'anviz';
+    content: "\ea1a";
+}
+
+.icon-search1:before {
+    font-family: 'anviz';
+    content: "\ea1b";
+}
+
+.icon-logo01:before {
+    font-family: 'anviz';
+    content: "\ea1d";
+}
+
+.icon-logo02:before {
+    font-family: 'anviz';
+    content: "\ea1e";
+}
+
+.icon-sercurityone:before {
+    font-family: 'anviz';
+    content: "\ea1f";
+}
+
+.icon-crosschex:before {
+    font-family: 'anviz';
+    content: "\ea20";
+}
+
+.icon-intellisight:before {
+    font-family: 'anviz';
+    content: "\ea21";
+}
+
+.icon-solved-entity:before {
+    font-family: 'anviz';
+    content: "\e913";
+}
+
+.icon-message-entity:before {
+    font-family: 'anviz';
+    content: "\e915";
+}
+
+.icon-anzhuo-entity:before {
+    font-family: 'anviz';
+    content: "\e90d";
+}
+
+.icon-apple-entity:before {
+    font-family: 'anviz';
+    content: "\e90e";
+}
+
+.icon-solution:before {
+    font-family: 'anviz';
+    content: "\e98d";
+}
+
+.icon-report-download:before {
+    font-family: 'anviz';
+    content: "\e98e";
+}
+
+.icon-organizational:before {
+    font-family: 'anviz';
+    content: "\e98f";
+}
+
+.icon-buy:before {
+    font-family: 'anviz';
+    content: "\e990";
+}
+
+.icon-authority:before {
+    font-family: 'anviz';
+    content: "\e991";
+}
+
+.icon-attendancea:before {
+    font-family: 'anviz';
+    content: "\e992";
+}
+
+.icon-sina:before {
+    font-family: 'anviz';
+    content: "\e993";
+}
+
+.icon-wechat:before {
+    font-family: 'anviz';
+    content: "\e994";
+}
+
+.icon-twitter:before {
+    font-family: 'anviz';
+    content: "\e995";
+}
+
+.icon-facebook:before {
+    font-family: 'anviz';
+    content: "\e996";
+}
+
+.icon-google:before {
+    font-family: 'anviz';
+    content: "\e997";
+}
+
+.icon-youtobe:before {
+    font-family: 'anviz';
+    content: "\e998";
+}
+
+.icon-equipment:before {
+    font-family: 'anviz';
+    content: "\e999";
+}
+
+.icon-frame:before {
+    font-family: 'anviz';
+    content: "\e99a";
+}
+
+.icon-report:before {
+    font-family: 'anviz';
+    content: "\e99b";
+}
+
+.icon-scheduling:before {
+    font-family: 'anviz';
+    content: "\e99c";
+}
+
+.icon-bread:before {
+    font-family: 'anviz';
+    content: "\e99d";
+}
+
+.icon-cloud_line:before {
+    font-family: 'anviz';
+    content: "\e99e";
+}
+
+.icon-coffee-house:before {
+    font-family: 'anviz';
+    content: "\e99f";
+}
+
+.icon-convenience:before {
+    font-family: 'anviz';
+    content: "\e9a0";
+}
+
+.icon-customized:before {
+    font-family: 'anviz';
+    content: "\e9a1";
+}
+
+.icon-fast-food:before {
+    font-family: 'anviz';
+    content: "\e9a2";
+}
+
+.icon-gas-station:before {
+    font-family: 'anviz';
+    content: "\e9a4";
+}
+
+.icon-quick-hand:before {
+    font-family: 'anviz';
+    content: "\e9a5";
+}
+
+.icon-user-login:before {
+    font-family: 'anviz';
+    content: "\ea22";
+}
+
+.icon-work-time:before {
+    font-family: 'anviz';
+    content: "\ea23";
+}
+
+.icon-fullIP:before {
+    font-family: 'anviz';
+    content: "\ea24";
+}
+
+.icon-payrollsoft:before {
+    font-family: 'anviz';
+    content: "\ea25";
+}
+
+.icon-shift-holidy:before {
+    font-family: 'anviz';
+    content: "\ea26";
+}
+
+.icon-google-play:before {
+    font-family: 'anviz';
+    content: "\ea27";
+}
+
+.icon-app-store:before {
+    font-family: 'anviz';
+    content: "\ea28";
+}
+
+.icon-battery:before {
+    font-family: 'anviz';
+    content: "\ea29";
+}
+
+.icon-bionano:before {
+    font-family: 'anviz';
+    content: "\ea2a";
+}
+
+.icon-cclogo:before {
+    font-family: 'anviz';
+    content: "\ea2b";
+}
+
+.icon-wifi:before {
+    font-family: 'anviz';
+    content: "\ea54";
+}
+
+.icon-bluetooth:before {
+    font-family: 'anviz';
+    content: "\ea55";
+}
+
+.icon-rfid-entity:before {
+    font-family: 'anviz';
+    content: "\ea56";
+}
+
+.icon-cpu:before {
+    font-family: 'anviz';
+    content: "\ea57";
+}
+
+.icon-ac:before {
+    font-family: 'anviz';
+    content: "\ea58";
+}
+
+.icon-facialflat:before {
+    font-family: 'anviz';
+    content: "\ea59";
+}
+
+.icon-ik10:before {
+    font-family: 'anviz';
+    content: "\ea5b";
+}
+
+.icon-ip65:before {
+    font-family: 'anviz';
+    content: "\ea5c";
+}
+
+.icon-screen:before {
+    font-family: 'anviz';
+    content: "\ea5d";
+}
+
+.icon-smiley:before {
+    font-family: 'anviz';
+    content: "\ea5e";
+}
+
+.icon-cloud:before {
+    font-family: 'anviz';
+    content: "\ea5f";
+}
+
+.icon-poe:before {
+    font-family: 'anviz';
+    content: "\ea60";
+}
+
+.icon-wifibatter:before {
+    font-family: 'anviz';
+    content: "\ea61";
+}
+
+.icon-exreports:before {
+    font-family: 'anviz';
+    content: "\ea62";
+}
+
+.icon-devices:before {
+    font-family: 'anviz';
+    content: "\ea63";
+}
+
+.icon-acremote:before {
+    font-family: 'anviz';
+    content: "\ea64";
+}
+
+.icon-records:before {
+    font-family: 'anviz';
+    content: "\ea65";
+}
+
+.icon-management:before {
+    font-family: 'anviz';
+    content: "\ea66";
+}
+
+.icon-echat:before {
+    font-family: 'anviz';
+    content: "\ea67";
+}
+
+.icon-fpline:before {
+    font-family: 'anviz';
+    content: "\ea68";
+}
+
+.icon-ok:before {
+    font-family: 'anviz';
+    content: "\ea69";
+}
+
+.icon-doorstatus:before {
+    font-family: 'anviz';
+    content: "\ea6a";
+}
+
+.icon-open:before {
+    font-family: 'anviz';
+    content: "\ea6b";
+}
+
+.icon-exportdate:before {
+    font-family: 'anviz';
+    content: "\ea6c";
+}
+
+.icon-set:before {
+    font-family: 'anviz';
+    content: "\ea6d";
+}
+
+.icon-useradd:before {
+    font-family: 'anviz';
+    content: "\ea6e";
+}
+
+.icon-fingerprintline:before {
+    font-family: 'anviz';
+    content: "\ea6f";
+}
+
+.icon-wifiline:before {
+    font-family: 'anviz';
+    content: "\ea70";
+}
+
+.icon-cardline:before {
+    font-family: 'anviz';
+    content: "\ea71";
+}
+
+.icon-facialline:before {
+    font-family: 'anviz';
+    content: "\ea72";
+}
+
+.icon-metal:before {
+    font-family: 'anviz';
+    content: "\ea73";
+}
+
+.icon-waterproof:before {
+    font-family: 'anviz';
+    content: "\ea74";
+}
+
+.icon-right-big:before {
+    font-family: 'anviz';
+    content: "\ea75";
+}
+
+.icon-left-big:before {
+    font-family: 'anviz';
+    content: "\ea76";
+}
+
+.icon-instagram:before {
+    font-family: 'anviz';
+    content: "\e92d";
+}
+
+.icon-linkedin:before {
+    font-family: 'anviz';
+    content: "\e92f";
+}
+

@@ -3,6 +3,8 @@
     <template id="assets_frontend" name="nav assets" inherit_id="web.assets_frontend">
         <xpath expr="link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/theme_nav/static/src/scss/cur_header.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_nav/static/src/scss/cur_footer.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_nav/static/src/css/font.css"/>
         </xpath>
     </template>
 </odoo>

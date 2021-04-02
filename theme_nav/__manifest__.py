@@ -6,7 +6,8 @@
  
   'data': [
     'views/layout.xml',
-    'views/assets.xml'
+    'views/assets.xml',
+    'views/snippets.xml'
   ],
   'category': 'Theme/Nav',
   'depends': ['website','website_theme_install'],
