@@ -13,10 +13,10 @@ class EmployeePromotion(models.Model):
 
     employee_id = fields.Many2one('hr.employee', string='Employee', required=True, help="Employee")
     name = fields.Char(string='Promotion', required=True, help='the promotion name')
-    previous_salary = fields.Integer(string='Previous Salary', required=True, help='the previous salary')
-    new_salary = fields.Integer(string='New Salary', required=True, help='the new salary')
-    previous_job_position = fields.Many2one('hr.job', string='Previous Job Postion', required=True, Help='Previous job position')
-    new_job_position = fields.Many2one('hr.job', string='New Job Postion', required=True, Help='New job position')
+    previous_salary = fields.Integer(string='Previous Salary',  help='the previous salary')
+    new_salary = fields.Integer(string='New Salary',  help='the new salary')
+    previous_job_position = fields.Many2one('hr.job', string='Previous Job Postion',  Help='Previous job position')
+    new_job_position = fields.Many2one('hr.job', string='New Job Postion',  Help='New job position')
     date = fields.Date(string='Date',
                             default=time.strftime('%Y-%m-%d'), readonly=False, help="promotion date")
     company_id = fields.Many2one('res.company', string='Company', required=True, help="Company",
