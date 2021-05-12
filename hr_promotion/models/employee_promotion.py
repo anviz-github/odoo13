@@ -26,8 +26,8 @@ class HrPromotion(models.Model):
     _inherit = 'hr.employee'
 
     promotion = fields.One2many('hr.promotion', 'employee_id', string="Promotion", help="Promotion")
-    promotion_salary = fields.Float(string='Promotion Salary', required=False, help='the promotion salary')
-    def get_insure_subtotal(self):
+    promotion_salary = fields.Float(compute='get_promotion_total', string='Promotion Salary', required=False, help='the promotion salary')
+    def get_promotion_total(self):
 
         for emp in self:
             ins_amount = 0
