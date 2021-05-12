@@ -28,17 +28,11 @@ class HrPromotion(models.Model):
     promotion = fields.One2many('hr.promotion', 'employee_id', string="Promotion", help="Promotion")
     promotion_salary = fields.Float(string='Promotion Salary', required=False, help='the promotion salary')
     def get_insure_subtotal(self):
-        current_date = datetime.now()
-        current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+
         for emp in self:
             ins_amount = 0
             for ins in emp.insurance:
-                x = str(ins.date_from)
-                y = str(ins.date_to)
-                if x < current_datetime:
-                    if y > current_datetime:
-
-                        ins_amount = ins_amount + ins.new_salary - ins.previous_salary
+                ins_amount = ins_amount + ins.new_salary
 
         emp.promotion_salary = ins_amount
 
