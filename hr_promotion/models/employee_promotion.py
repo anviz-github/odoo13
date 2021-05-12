@@ -31,7 +31,7 @@ class HrPromotion(models.Model):
 
         for emp in self:
             ins_amount = 0
-            for ins in emp.insurance:
+            for ins in emp.new_saraly:
                 ins_amount = ins_amount + ins.new_salary
 
         emp.promotion_salary = ins_amount
