@@ -27,7 +27,7 @@ class HrPromotion(models.Model):
 
     promotion = fields.One2many('hr.promotion', 'employee_id', string="Promotion", help="Promotion")
     promotion_salary = fields.Float(compute='get_promotion_total', string='Promotion Salary', required=False, help='the promotion salary')
-    promotion_date =
+    #promotion_date =
     def get_promotion_total(self):
 
         for emp in self:
