@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c4b7bf1-da95-4d21-82e0-62164229154b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../payment_elavon_scs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../payment_elavon_scs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quality_alert_state/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../quality_alert_state/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/device_device.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/device_device.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

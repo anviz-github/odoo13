@@ -50,7 +50,7 @@ class Device(models.Model):
             url = ''.join([host, endpoint])
             r1 = requests.post(url, data={'client_key': client_key, 'client_secret': client_secret})
             token = r1.json()['data']['token']
-            print('token', token)
+            #print('token', token)
             if token:
                 endpoint = r"/service/auth"
                 url = ''.join([host, endpoint])
@@ -64,11 +64,11 @@ class Device(models.Model):
 
                     # r = requests.post(url,headers=headers,data=json.dumps(body))
                     r = requests.post(url, headers=headers, json=body)
-                    print('r.text', r.text)
-                    print('return', r.json()['code'])
+                    #print('r.text', r.text)
+                    #print('return', r.json()['code'])
                     if r.json()['code'] == 0:
                         return_data = r.json()['data']
-                        print(return_data)
+                        #print(return_data)
                         return return_data
                     else:
                         return False
@@ -84,17 +84,17 @@ class Device(models.Model):
     #@api.onchange('server_id', 'device_id')
     def _request_key(self, device,platform):
         #a20_id = '373734bb2920013106060809ffff0303'
-        print('device_id', device.device_id)
-        print('server_id', device.server_id.id)
+        #print('device_id', device.device_id)
+        #print('server_id', device.server_id.id)
         server = self.env['device.server'].search([('id', '=', device.server_id.id)])
-        print('server search return', server)
-        print('quota', server.server_quota)
+        #print('server search return', server)
+        #print('quota', server.server_quota)
 
 
         if server.server_quota>0 and server.platform == platform:
 
             return_data = Device.get_key(device.device_id)
-            print('return_data', return_data)
+            #print('return_data', return_data)
             if return_data == False:
                 return False
             else:
@@ -118,10 +118,10 @@ class Device(models.Model):
     @api.model
     def create(self, vals):
         new_id = super(Device, self).create(vals)
-        print('created id', new_id)
-        #device = self.browse(new_id)
-        print('create id ', new_id)
-        print('device_id', new_id.device_id)
+        # print('created id', new_id)
+        # #device = self.browse(new_id)
+        # print('create id ', new_id)
+        # print('device_id', new_id.device_id)
         if 'facepass' in new_id.device_id:
             platform = 'facepass'
         else:
@@ -132,7 +132,7 @@ class Device(models.Model):
             return new_id
         else:
             return_key = self._request_key(new_id, platform)
-            print("retrun_key", return_key)
+            # print("retrun_key", return_key)
 
             if return_key:
                 return new_id
