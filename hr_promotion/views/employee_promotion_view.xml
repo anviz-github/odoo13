@@ -12,6 +12,7 @@
                     <group>
                         <group>
                             <field name="promotion_salary"/>
+                            <field name="promotion_date"/>
                         </group>
                         <!--group>
                             <field name="insurance_pesion_personal"/>
