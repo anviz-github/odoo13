@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4c4b7bf1-da95-4d21-82e0-62164229154b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr_promotion/models/employee_promotion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../hr_promotion/models/employee_promotion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -44,3 +44,5 @@ class HrPromotion(models.Model):
 
 
 
+
+
