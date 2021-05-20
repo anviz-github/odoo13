@@ -36,7 +36,7 @@ class HrPromotion(models.Model):
             ins_amount = 0
             ins_date = time.strftime('%Y-%m-%d')
             for ins in emp.promotion:
-                ins_amount = ins_amount + ins.adjustment
+                ins_amount = ins_amount + ins.new_salary
                 ins_date = ins.date
         emp.promotion_salary = ins_amount
         emp.promotion_date = ins_date
