@@ -30,6 +30,7 @@ class HrPromotion(models.Model):
     promotion_salary = fields.Float(compute='get_promotion_total', string='Promotion Salary', required=False, help='the promotion salary')
     promotion_date = fields.Date(string='Date', readonly=True, help="promotion date")
 
+    @api.onchange('promotion')
     def get_promotion_total(self):
 
         for emp in self:
